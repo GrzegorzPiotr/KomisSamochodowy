@@ -37,30 +37,36 @@ public class MainKomis {
                 }
                 case 2: {
                     for (int i = 0; i < auta.size (); i++) {
-                        System.out.println (auta.get (i));
-
-                    }break;
+                        System.out.print (i + 1 + ".");
+                        System.out.println (" " + auta.get (i));
+                    }
+                    break;
                 }
                 case 3: {
                     sortowanie (auta);
                     break;
 
-
-
                 }
                 case 4: {
                     filtrowanie (auta);
-
-
                 }
                 case 5: {
+                    System.out.println ("wpisz nr pojazdu który chcesz usunąć");
+                    int i = in.nextInt ();
+                    auta.remove (i);
+
+
+
                 }
-                case 6:
-                default:
+
+
+            case 6:
+            default:
+        }
             }
         }
 
 
     }
-}
+
 

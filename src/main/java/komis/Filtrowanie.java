@@ -19,7 +19,7 @@ public class Filtrowanie {
             System.out.println ("2. według ceny mniejszej niż ...");
             System.out.println ("3. według przebiegu większego niż ... ");
             System.out.println ("4. według przebiegu większego niż ... ");
-            System.out.println ("5. zakończ sortowanie");
+            System.out.println ("5. zakończ filtrownie");
 
             action2 = in.nextInt ();
 
@@ -34,7 +34,7 @@ public class Filtrowanie {
                     auta3.stream ()
                             .filter (a -> a.getCena () > b)
                     .forEach (System.out::println);
-
+break;
                 }
                 case 2: {
                     Stream<Samochod> samochodStream = auta3.stream ();

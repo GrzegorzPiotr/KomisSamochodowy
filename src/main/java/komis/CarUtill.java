@@ -33,7 +33,7 @@ public class CarUtill {
         scanner.nextLine ();
         System.out.println ("Podaj rocznik");
         int orocznik = scanner.nextInt ();
-scanner.nextLine ();
+        scanner.nextLine ();
         Samochod autko = new Samochod (omarka, okolor, ocena, oiloscDrzwi, oprzebieg, orocznik);
 
         return autko;
