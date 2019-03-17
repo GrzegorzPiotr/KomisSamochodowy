@@ -4,6 +4,8 @@ import java.util.*;
 import java.util.stream.Stream;
 
 import static komis.CarUtill.nowyPojazd;
+import static komis.Filtrowanie.filtrowanie;
+import static komis.Metodasort.sortowanie;
 
 public class MainKomis {
 
@@ -37,23 +39,19 @@ public class MainKomis {
                     for (int i = 0; i < auta.size (); i++) {
                         System.out.println (auta.get (i));
 
-                    }
+                    }break;
                 }
                 case 3: {
-                    Stream<Samochod> samochodStream = auta.stream ();
-                    System.out.println ("Posortuj samochody wg nazwy");
-                    auta.stream ()
-                            .sorted ((o1, o2) -> o1.getMarka ().compareTo (o2.getMarka ()))
-                            .forEach (System.out::println);
+                    sortowanie (auta);
+                    break;
 
-                    System.out.println ("Posortuj samochody wg ceny");
-                    auta.stream ()
-                            .sorted (Comparator.comparingDouble (Samochod::getCena))
-                            .forEach (System.out::println);
 
 
                 }
                 case 4: {
+                    filtrowanie (auta);
+
+
                 }
                 case 5: {
                 }
